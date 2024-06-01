@@ -49,6 +49,7 @@
             <li>RUN</li>
             <li>FOOTBALL</li>
           </ul>
+          <img src="./icon/menu_nike.svg" alt="" class="nike_icon" />
         </div>
         <ul class="header_nav_button">
           <li>WOMAN</li>
@@ -81,6 +82,20 @@
           <button>Celebrate with us</button>
         </div>
       </div>
+      <div class="main_baner_phone">
+        <div class="main_baner_phone1">
+          <p>h</p>
+        </div>
+        <div class="main_baner_phone2">
+          <p>WE ARE NEVER DONE</p>
+          <p>
+            Celebrating 50 years of Nike from May 16th! <br />
+            Exclusive products, experiences and much <br />more await you for
+            five days. Scan and join <br />the Nike app!
+          </p>
+          <button>Celebrate with us</button>
+        </div>
+      </div>
       <div class="baner_nike">
         <img
           width="100%"
@@ -89,6 +104,7 @@
           class="nike"
         />
       </div>
+
       <div class="second_baner">
         <div class="big_baner"></div>
         <div class="big_baner_icon">
@@ -108,18 +124,12 @@
             <img src="./img/nike-air-max-270.png" alt="" class="shous" />
           </div>
           <div class="summer_mod_card1 summer_mod_card2">
-            <p class="summer_mod_card1_main_text">NEW</p>
+            <p class="summer_mod_card1_main_text summer_main_phone_tex">NEW</p>
             <p class="summer_mod_card1_second_text">Air Max 200 SE</p>
             <div class="arrow_up">
               <img src="./icon/arrow.svg" alt="" />
             </div>
-            <img
-              width="560"
-              height="439"
-              src="./img/air-max-200-se.png"
-              alt=""
-              class="shous shous2"
-            />
+            <img src="./img/air-max-200-se.png" alt="" class="shous shous2" />
           </div>
         </div>
         <div class="summer_mod_text">
@@ -144,12 +154,7 @@
         <div class="top_sneahers_cards">
           <div class="top_sneahers_card1">
             <div class="top_sneahers_card1_img">
-              <img
-                width="440px"
-                height="390px"
-                src="./img/air-max-97.png"
-                alt=""
-              />
+              <img src="./img/air-max-97.png" alt="" />
             </div>
             <p class="logo_text">NIKE</p>
             <div class="top_sneahers_card1_content">
@@ -161,14 +166,9 @@
               </div>
             </div>
           </div>
-          <div class="top_sneahers_card1 card3">
+          <div class="top_sneahers_card1 card2">
             <div class="top_sneahers_card2_img">
-              <img
-                width="440px"
-                height="390px"
-                src="./img/react-presto.png"
-                alt=""
-              />
+              <img src="./img/react-presto.png" alt="" />
             </div>
             <p class="logo_text">NIKE</p>
             <div class="top_sneahers_card1_content">
@@ -180,14 +180,9 @@
               </div>
             </div>
           </div>
-          <div class="top_sneahers_card1">
+          <div class="top_sneahers_card1 card3">
             <div class="top_sneahers_card3_img">
-              <img
-                width="440px"
-                height="390px"
-                src="./img/kd13-ep.png"
-                alt=""
-              />
+              <img src="./img/kd13-ep.png" alt="" />
             </div>
             <p class="logo_text">NIKE</p>
             <div class="top_sneahers_card1_content">
@@ -203,6 +198,7 @@
       </section>
       <section class="buy_by_category">
         <p>Buy by category</p>
+
         <div class="category_container">
           <div class="category_container_box1">
             <p>WORKOUT</p>
@@ -230,9 +226,21 @@
             />
           </div>
         </div>
+        <div class="category_container_phone">
+          <div class="category_container_phone1"><p>WORKOUT</p></div>
+          <div class="category_container_phone2"><p>RUN</p></div>
+          <div class="category_container_phone3"><p>FOOTBALL</p></div>
+        </div>
       </section>
       <section class="look_good">
         <p class="look_good_logo_text">LOOKS GOOD. RUNS GOOD. FEELS GOOD.</p>
+        <p class="look_good_logo_text_phone">
+          <span class="bold1">LOOKS GOOD.</span>
+          <br />
+          <span class="bold2">RUNS GOOD.</span>
+          <br />
+          <span class="bold3">FEELS GOOD.</span>
+        </p>
         <div class="look_good_cards">
           <div class="look_good_card1">
             <div class="look_good_card_content">
@@ -241,9 +249,10 @@
               </p>
               <p class="look_good_card1_second_text">on your first purchase</p>
               <button>Shop now</button>
+              <div class="arrow_up arrow_phone">
+                <img src="./icon/arrow.svg" alt="" />
+              </div>
               <img
-                width="560"
-                height="460"
                 class="look_good_card1_img1"
                 src="./img/Nike-Shoe-disc1.png"
                 alt=""
@@ -257,13 +266,10 @@
               </p>
               <p class="look_good_card1_second_text">on your first purchase</p>
               <button>Shop now</button>
-              <img
-                width="500"
-                height="400"
-                class="look_good_card1_img2"
-                src="./img/disc2.png"
-                alt=""
-              />
+              <div class="arrow_up arrow_phone">
+                <img src="./icon/arrow.svg" alt="" />
+              </div>
+              <img class="look_good_card1_img2" src="./img/disc2.png" alt="" />
             </div>
           </div>
         </div>
@@ -303,15 +309,16 @@
       const close_bar = document.getElementById("close_bar");
       const burger_menu = document.getElementById("burger_menu");
       const burger_bar = document.getElementById("burger_bar");
-
+      console.log(close_bar);
       burger_bar.addEventListener("click", () => {
-        burger_menu.forEach((burger_menuElement) => {
-          burger_menuElement.style.display = "block";
-        });
+        burger_menu.classList.remove("hidden");
+        burger_menu.classList.add("visible");
       });
 
-      close_bar.addEventListener("click", () => {
-        burger_menu.style.left = "-100%";
+      close_bar.addEventListener("click", (e) => {
+        console.log(e);
+        burger_menu.classList.remove("visible");
+        burger_menu.classList.add("hidden");
       });
     </script>
   </body>
