@@ -1097,6 +1097,8 @@ main {
     padding-left: 35px;
     padding-right: 35px;
     top: -15px;
+    justify-content: center;
+    align-items: center;
   }
   .summer_mod_card1 {
     width: 302px;
@@ -1287,6 +1289,8 @@ main {
     padding-left: 20px;
     padding-right: 40px;
     padding-top: 50px;
+    justify-content: center;
+    align-items: center;
   }
   .look_good_card1 {
     width: 302px;
