@@ -82,12 +82,12 @@
         </div>
       </div>
       <div class="baner_nike">
-        <img
+        <!-- <img
           width="100%"
-          src="https://s3-alpha-sig.figma.com/img/c23a/7a1e/fcce5c5afa7fd5c9e3fca232135c8380?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dO5~2~01ShBwmrvar4XBww5bjb9X-VU-NXv4q-hzBd-NeK44Ri2IINFKg~hbli9~E5P4yyCasQ9WwNAT-9ToZA38PEbmFRYZ6fe6HjCJ8PcFVi~H4p-ZTc8L1LXJRk4HDttD6u75y4sBFY716TMXgol0djYyuW6fEvpVFZTNuW7cqDo2NBWD0wZSebNfK9zVHYHAQjuN8rWJgCPPJRsTJU0clcLewm~Y3NfLCf1rbgsCzJZFCG29vbUrr7ZbBOqYaoFq315F0~lm9B2XsbVTaURhN0J2LJKqiH3DptIXUDpNjD~LPuV9pZQEf1BwjozJqFFnd0WSk9es-hY5X8YbbQ__"
-          alt=""
+          src="/img/baner_logo_nike.gif"
+          alt="nike"
           class="nike"
-        />
+        /> -->
       </div>
       <div class="second_baner">
         <div class="big_baner"></div>
@@ -208,26 +208,17 @@
             <p>WORKOUT</p>
           </div>
           <div class="category_container_box2">
-            <img
-              src="https://s3-alpha-sig.figma.com/img/4814/0701/3a57f7aef82608b9b91b95c4cb3ec74d?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dofYK4tw6pxloNieTI00-AIS9yQmZgfuRi7vY4TjQF139At9Jg67rCoShMGveIfeMSSYC2d439gQGsMsgdcXnQ2m8nydAH3wcMGPKjvct1ZYmxC-AjjEWI9HUsceDBrwnLMaPwMD4X3W1qHQT38qe6jWQflUT48uliPUcVQhi0fYw0XqFSbzhVC3XLLVKmaZaWs9VlEKSDUNBQhmpLeFaAjro6lv8Jjeg~M0AiZZafn-rOj3crjyKDvDpjnFfcpKzfUhq18JuttvvkQLjLVV8sp7My6S2nOYiPselJI6KUSryYLRRIXmogMBfuqfpjdS5OHgFVGz8hOgG-9NTjfAjQ__"
-              alt=""
-            />
+            <img src="./img/workout.gif" alt="" />
           </div>
           <div class="category_container_box3">
-            <img
-              src="https://s3-alpha-sig.figma.com/img/8d94/05eb/d3f71d1cd9c4f37b3f17bf91a0dec63a?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BihYDF~4v1VWFINklSiPmHiPzlcTms1PyfN2v1j7nK2z76sX-h2KRWqyvHZBB-3Vcwia9GUpYUK7vGG5B9HK-u2aQJjiJ2pK8krRGV40iE-T6pAOkYgZzBo5iF1x~B-0SNHez8ZPioBOHeiNps~YGQ8yRcx4zVmU3FP3y5Ypwo1ic9aPrbh4~fqqsmS8NYgP1TUHUaSS1VEumkZMzaJ8MUFhVjFzLInmbewUHsmPybCSFckezf8YDHsnvW1ysaJGtWftu8pjTNaT-G18ApC1CvoPZbm0JWe4wuBrNGp1C3xIuL6tH1YfDhnnUqSffeTXgEPptU9JrcxkhHcKzEg0og__"
-              alt=""
-            />
+            <img src="./img/run.gif" alt="" />
           </div>
           <div class="category_container_box4">
             <p>RUN</p>
           </div>
           <div class="category_container_box5"><p>FOOTBALL</p></div>
           <div class="category_container_box6">
-            <img
-              src="https://s3-alpha-sig.figma.com/img/36a5/0f74/ccf1986c684ecef991180608f08f6442?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZHnVkj1gcVB29rdpCwUFRkb7Zg6fwlE54zz2atofx8GjyJ2vfypeVHfMKKzBLx3S9MF7fFn6DcmrxfIJ5K5ir~EynONJJxKPByHwyz2BNQrje8DLQPqPxNIhb2eUtiNuIxb5ZxHE8xF-tXMlSKUm8WW2-NSoSNWFd4FjcPubXgNJNw4JDPh1zxlwMkFSVsHsnZwuARlE5Bd1msa1rAJts7H2NfjqhBYhRRVUjsOvVUSR1UV74rLFQRCR~j8YQXn9bb1S0gfhP7UXn1KIUteaFLcaaiZ7gF1gdJGn33nszrpDGueCGa5z~pfjYTfcphM8IdvCTxbQGEHx9BipUNI9fw__"
-              alt=""
-            />
+            <img src="./img/footbal.gif" alt="" />
           </div>
         </div>
       </section>
@@ -305,9 +296,7 @@
       const burger_bar = document.getElementById("burger_bar");
 
       burger_bar.addEventListener("click", () => {
-        burger_menu.forEach((burger_menuElement) => {
-          burger_menuElement.style.display = "block";
-        });
+        burger_menu.style.display = "block";
       });
 
       close_bar.addEventListener("click", () => {

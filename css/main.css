@@ -188,6 +188,7 @@ header {
 }
 body {
   width: 100vw;
+  overflow-x: hidden;
 }
 
 main {
@@ -245,6 +246,8 @@ main {
 
 .baner_nike {
   width: 100%;
+  height: 49px;
+  background-image: url(/img/baner_logo_nike.gif);
 }
 
 .second_baner {
@@ -288,6 +291,7 @@ main {
   top: -40px;
   flex-direction: row;
   padding-left: 50px;
+  justify-content: center;
 }
 
 .summer_mod_card1 {
