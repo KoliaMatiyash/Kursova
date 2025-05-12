@@ -1,6 +1,5 @@
 body {
     width: 100vw;
-    overflow-x: hidden;
 }
 
 main {
@@ -62,9 +61,6 @@ main {
 
 .baner_nike {
     width: 100%;
-    height: 49px;
-    background-image: url(/img/baner_logo_nike.gif);
-
 }
 
 
@@ -109,7 +105,6 @@ main {
     top: -40px;
     flex-direction: row;
     padding-left: 50px;
-    justify-content: center;
 }
 
 
@@ -991,8 +986,6 @@ main {
         padding-left: 35px;
         padding-right: 35px;
         top: -15px;
-        justify-content: center;
-        align-items: center;
     }
 
     .summer_mod_card1 {
@@ -1228,8 +1221,6 @@ main {
         padding-left: 20px;
         padding-right: 40px;
         padding-top: 50px;
-        justify-content: center;
-        align-items: center;
     }
 
     .look_good_card1 {
