@@ -16,7 +16,7 @@
           class="burger_bar"
           id="burger_bar"
         />
-        <div class="burger_menu" id="burger_menu">
+        <div class="burger_menu unvisible" id="burger_menu">
           <div class="burger_menu_nav">
             <img
               src="./icon/close_bar.svg"
@@ -70,7 +70,7 @@
         </ul>
       </div>
     </header>
-    <main>
+    <main id="allMainContant">
       <div class="main_baner">
         <div class="main_text">
           <p>WE ARE NEVER DONE</p>
@@ -111,7 +111,7 @@
             <p class="summer_mod_card1_second_text">
               AIR JORDAN 1 MID <br />LIGHT SMOKE GREY
             </p>
-            <div class="arrow_up">
+            <div class="arrow_up" id="arrowUp">
               <img src="./icon/arrow.svg" alt="" />
             </div>
             <img src="./img/nike-air-max-270.png" alt="" class="shous" />
@@ -119,7 +119,7 @@
           <div class="summer_mod_card1 summer_mod_card2">
             <p class="summer_mod_card1_main_text summer_main_phone_tex">NEW</p>
             <p class="summer_mod_card1_second_text">Air Max 200 SE</p>
-            <div class="arrow_up">
+            <div class="arrow_up" id="arrowUp">
               <img src="./icon/arrow.svg" alt="" />
             </div>
             <img src="./img/air-max-200-se.png" alt="" class="shous shous2" />
@@ -136,53 +136,58 @@
         <div class="top_sneakers_nav">
           <p>Top sneakers</p>
           <div class="top_sneakers_nav_bar">
-            <div class="arrow_up arrow_left">
+            <div id="arrowLeft" class="arrow_up arrow_left">
               <img src="./icon/arrow2.svg" alt="" />
             </div>
-            <div class="arrow_up arrow_right">
+            <div id="arrowRight" class="arrow_up arrow_right">
               <img src="./icon/arrow2.svg" alt="" />
             </div>
           </div>
         </div>
-        <div class="top_sneahers_cards">
-          <div class="top_sneahers_card1">
-            <div class="top_sneahers_card1_img">
-              <img src="./img/air-max-97.png" alt="" />
-            </div>
-            <p class="logo_text">NIKE</p>
-            <div class="top_sneahers_card1_content">
-              <div class="content_text">
-                <p>Air Max 97 <br /><span>$20.99</span></p>
-                <div class="arrow_up arrow_up_second">
-                  <img src="./icon/arrow.svg" alt="" />
+
+        <div id="carouselWrapper" class="carousel-wrapper">
+          <div id="carousel" class="top_sneahers_cards">
+            <div class="top_sneahers_card1">
+              <div class="top_sneahers_card1_img">
+                <img src="./img/air-max-97.png" alt="" />
+              </div>
+              <p class="logo_text">NIKE</p>
+              <div class="top_sneahers_card1_content">
+                <div class="content_text">
+                  <p>Air Max 97 <br /><span>$20.99</span></p>
+                  <div class="arrow_up arrow_up_second" id="arrowUp">
+                    <img src="./icon/arrow.svg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="top_sneahers_card1 card2">
-            <div class="top_sneahers_card2_img">
-              <img src="./img/react-presto.png" alt="" />
-            </div>
-            <p class="logo_text">NIKE</p>
-            <div class="top_sneahers_card1_content">
-              <div class="content_text">
-                <p>React Presto <br /><span>$20.99</span></p>
-                <div class="arrow_up arrow_up_3">
-                  <img src="./icon/arrow.svg" alt="" />
+
+            <div class="top_sneahers_card1 card2">
+              <div class="top_sneahers_card2_img">
+                <img src="./img/react-presto.png" alt="" />
+              </div>
+              <p class="logo_text">NIKE</p>
+              <div class="top_sneahers_card1_content">
+                <div class="content_text">
+                  <p>React Presto <br /><span>$20.99</span></p>
+                  <div class="arrow_up arrow_up_3" id="arrowUp">
+                    <img src="./icon/arrow.svg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="top_sneahers_card1 card3">
-            <div class="top_sneahers_card3_img">
-              <img src="./img/kd13-ep.png" alt="" />
-            </div>
-            <p class="logo_text">NIKE</p>
-            <div class="top_sneahers_card1_content">
-              <div class="content_text">
-                <p>KD13 EP<br /><span>$20.99</span></p>
-                <div class="arrow_up arrow_up_4">
-                  <img src="./icon/arrow.svg" alt="" />
+
+            <div class="top_sneahers_card1 card3">
+              <div class="top_sneahers_card3_img">
+                <img src="./img/kd13-ep.png" alt="" />
+              </div>
+              <p class="logo_text">NIKE</p>
+              <div class="top_sneahers_card1_content">
+                <div class="content_text">
+                  <p>KD13 EP<br /><span>$20.99</span></p>
+                  <div class="arrow_up arrow_up_4" id="arrowUp">
+                    <img src="./icon/arrow.svg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -233,7 +238,7 @@
               </p>
               <p class="look_good_card1_second_text">on your first purchase</p>
               <button>Shop now</button>
-              <div class="arrow_up arrow_phone">
+              <div class="arrow_up arrow_phone" id="arrowUp">
                 <img src="./icon/arrow.svg" alt="" />
               </div>
               <img
@@ -250,7 +255,7 @@
               </p>
               <p class="look_good_card1_second_text">on your first purchase</p>
               <button>Shop now</button>
-              <div class="arrow_up arrow_phone">
+              <div class="arrow_up arrow_phone" id="arrowUp">
                 <img src="./icon/arrow.svg" alt="" />
               </div>
               <img class="look_good_card1_img2" src="./img/disc2.png" alt="" />
@@ -289,23 +294,7 @@
         <li>FOOTBALL</li>
       </ul>
     </footer>
-    <script>
-      const close_bar = document.getElementById("close_bar");
-      const burger_menu = document.getElementById("burger_menu");
-      const burger_bar = document.getElementById("burger_bar");
-      console.log(close_bar);
-      burger_bar.addEventListener("click", () => {
-        burger_menu.style.display = "block";
-
-        burger_menu.classList.remove("hidden");
-        burger_menu.classList.add("visible");
-      });
-
-      close_bar.addEventListener("click", (e) => {
-        console.log(e);
-        burger_menu.classList.remove("visible");
-        burger_menu.classList.add("hidden");
-      });
-    </script>
+    <script src="./script/main.js"></script>
+    <script src="./script/phoneCarousel.js"></script>
   </body>
 </html>

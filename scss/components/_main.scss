@@ -3,6 +3,10 @@ body {
     overflow-x: hidden;
 }
 
+.unvisible {
+    display: none;
+}
+
 main {
     width: 100vw;
     z-index: 0;
@@ -64,6 +68,7 @@ main {
     width: 100%;
     height: 49px;
     background-image: url(/img/baner_logo_nike.gif);
+    background-size: cover;
 
 }
 
@@ -174,16 +179,17 @@ main {
     border-radius: 35px;
     margin-left: 65px;
     margin-top: 15px;
+    cursor: pointer;
+}
+
+.arrow_up img {
+    cursor: pointer;
 }
 
 .arrow_phone {
     display: none;
 }
 
-.arrow_up:hover {
-    background-color: #C6C6C6;
-    cursor: pointer;
-}
 
 .summer_mod_card2 {
     margin-left: 150px;
@@ -207,7 +213,7 @@ main {
     width: 90%;
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 65px;
     padding-top: 100px;
 }
 
@@ -232,26 +238,36 @@ main {
 .arrow_right {
     margin: 0;
     background-color: #F5F5F5;
+    cursor: pointer;
 }
 
 .arrow_left {
     margin: 0;
     margin-right: 25px;
     background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+.arrow_right,
+.arrow_left {
+    display: none;
 }
 
 .arrow_left img {
     rotate: 180deg;
 }
 
-.arrow_right:hover {
-    background-color: #C6C6C6;
-    cursor: pointer;
-}
+// .arrow_right:hover {
+//     background-color: #C6C6C6;
 
-.arrow_left:hover {
+// }
+
+// .arrow_left:hover {
+//     background-color: #C6C6C6;
+
+// }
+.hover {
     background-color: #C6C6C6;
-    cursor: pointer;
 }
 
 .top_sneahers_cards {
@@ -725,6 +741,11 @@ main {
         margin-left: 50px;
     }
 
+    .arrow_right,
+    .arrow_left {
+        display: none;
+    }
+
     .shous {
         width: 400px;
         top: -75px;
@@ -978,6 +999,10 @@ main {
         box-shadow: 0.5px 0.5px 25px 0px rgba(255, 255, 255, 1);
     }
 
+    .baner_nike {
+        height: 42px;
+    }
+
     .big_baner {
         height: 187px;
     }
@@ -1070,18 +1095,55 @@ main {
         margin-left: 10px;
     }
 
+    .arrow_right,
+    .arrow_left {
+        display: flex;
+    }
+
+    .carousel-wrapper {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+
+    }
+
     .top_sneahers_cards {
-        justify-content: center;
+        justify-content: space-between;
+        height: 365px;
+        display: flex;
+        transition: transform 0.4s ease-in-out;
     }
 
     .top_sneahers_card1 {
         width: 240px;
         height: 336px;
+        flex: 0 0 70%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-left: 60px;
     }
 
     .top_sneahers_card1_img img {
         width: 270px;
         height: auto;
+    }
+
+    .top_sneahers_card2_img img {
+        width: 270px;
+        height: auto;
+    }
+
+    .top_sneahers_card3_img img {
+        width: 270px;
+        height: auto;
+    }
+
+    .card2 {
+        margin-left: 110px;
+    }
+
+    .card3 {
+        margin-left: 120px;
     }
 
     .top_sneahers_card1_content {
@@ -1096,6 +1158,7 @@ main {
 
     .content_text {
         margin-top: 130px;
+        width: 200px;
     }
 
     .content_text p {
@@ -1106,19 +1169,17 @@ main {
         font-size: 12px;
     }
 
-    .card2 {
-        display: none;
-    }
+    // .card2 {
+    //     display: none;
+    // }
 
-    .card3 {
-        display: none;
-    }
+    // .card3 {
+    //     display: none;
+    // }
 
     .buy_by_category {
         width: 100%;
-
-        padding-left: 0;
-        padding-top: 50px;
+        padding: 0;
     }
 
     .buy_by_category p {
