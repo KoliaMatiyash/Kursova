@@ -68,7 +68,7 @@ main {
     width: 100%;
     height: 49px;
     background-image: url(/img/baner_logo_nike.gif);
-    background-size: cover;
+
 
 }
 
@@ -190,6 +190,9 @@ main {
     display: none;
 }
 
+.arrow_up:hover {
+    background-color: #C6C6C6;
+}
 
 .summer_mod_card2 {
     margin-left: 150px;
@@ -274,7 +277,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 33px;
 }
 
@@ -523,7 +526,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .look_good_card1 {
@@ -676,6 +679,10 @@ main {
 .glory_to_ukraine img {
     padding-bottom: 100px;
 }
+
+// start style accountForm
+
+// end style accountForm
 
 @media (min-width: 931px) and (max-width: 1300px) {
     .main_baner {

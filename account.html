@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YOURSNEAKER</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/account.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header_nav">
+        <img
+          src="./icon/burger_bar.svg"
+          alt=""
+          class="burger_bar"
+          id="burger_bar"
+        />
+        <div class="burger_menu unvisible" id="burger_menu">
+          <div class="burger_menu_nav">
+            <img
+              src="./icon/close_bar.svg"
+              alt=""
+              class="close_bar"
+              id="close_bar"
+            />
+            <p class="header_nav_logo_text">your<span>SNEAKER</span></p>
+            <ul class="header_nav_icon">
+              <li>
+                <img id="accountBtn" src="./icon/1.svg" alt="" />
+              </li>
+              <li>
+                <img src="./icon/2.svg" alt="" />
+              </li>
+              <li>
+                <img src="./icon/3.svg" alt="" />
+              </li>
+            </ul>
+          </div>
+          <ul class="burger_menu_nav_list1">
+            <li><img src="./icon/2.svg" alt="" /> SEARCH</li>
+            <li><img src="./icon/1.svg" alt="" /> LOGIN</li>
+          </ul>
+          <ul class="burger_menu_nav_list2">
+            <li>All</li>
+            <li>WOMAN</li>
+            <li>MEN</li>
+            <li>WORCOUT</li>
+            <li>RUN</li>
+            <li>FOOTBALL</li>
+          </ul>
+          <img src="./icon/menu_nike.svg" alt="" class="nike_icon" />
+        </div>
+        <ul class="header_nav_button">
+          <li>WOMAN</li>
+          <li>MAN</li>
+          <li><a href="./index.html">ALL</a></li>
+        </ul>
+        <p class="header_nav_logo_text">your<span>SNEAKER</span></p>
+        <ul class="header_nav_icon">
+          <li>
+            <a href="./account.html"><img src="./icon/1.svg" alt="" /></a>
+          </li>
+          <li>
+            <img src="./icon/2.svg" alt="" />
+          </li>
+          <li>
+            <img src="./icon/3.svg" alt="" />
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="form_section">
+        <div class="container right-panel-active">
+          <!-- Sign Up -->
+          <div class="container__form container--signup">
+            <form action="#" class="form" id="form1">
+              <span id="warning"></span>
+              <h2 class="form__title">Sign Up</h2>
+              <div class="input__group">
+                <div class="error__output"></div>
+                <input type="text" placeholder="User" class="input" id="name" />
+              </div>
+              <div class="input__group">
+                <div class="error__output"></div>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="input"
+                  id="email"
+                />
+              </div>
+              <div class="input__group">
+                <div class="error__output"></div>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="input"
+                  id="password"
+                />
+
+                <label for="showPassword" class="icon" id="show__password"
+                  ><i class="fas fa-eye"
+                    ><img
+                      style="width: 25px; height: auto"
+                      src="./icon/eye.svg"
+                      alt="" /></i
+                ></label>
+              </div>
+              <button class="btn" id="btnSingUp">Sign Up</button>
+            </form>
+          </div>
+
+          <!-- Sign In -->
+          <div class="container__form container--signin">
+            <form action="#" class="form" id="form2">
+              <h2 class="form__title">Sign In</h2>
+              <div class="input__group">
+                <div class="error__output"></div>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="input"
+                  id="emailSingIn"
+                />
+              </div>
+
+              <div class="input__group">
+                <div class="error__output"></div>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="input"
+                  id="passwordSingIn"
+                />
+              </div>
+
+              <a href="#" class="link">Forgot your password?</a>
+              <button class="btn">Sign In</button>
+            </form>
+          </div>
+
+          <!-- Overlay -->
+          <div class="container__overlay">
+            <div class="overlay">
+              <div class="overlay__panel overlay--left">
+                <button class="btn" id="signIn">Sign In</button>
+              </div>
+              <div class="overlay__panel overlay--right">
+                <button class="btn" id="signUp">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="user_Account unvisible2" id="userContainer">
+          <div class="sing_out">
+            <button id="singOut">Sing Out</button>
+          </div>
+          <div class="user_text">
+            <p id="hiUser"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul class="first_footer_list">
+        <li>ALL</li>
+        <li class="uperspace">WOMAN</li>
+        <li>MEN</li>
+      </ul>
+      <img src="./img/footer-img.png" alt="" />
+      <ul class="second_footer_list">
+        <li>WORCOUT</li>
+        <li class="lowspace">RUN</li>
+        <li>FOOTBALL</li>
+      </ul>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.9.0/validator.min.js"></script>
+    <script src="./script/account.js"></script>
+  </body>
+</html>

@@ -48,6 +48,10 @@ header {
   font-weight: 400;
 }
 
+.header_nav_button li a {
+  color: black;
+}
+
 .header_nav_button :not(:first-child) {
   padding-left: 50px;
 }
@@ -261,7 +265,6 @@ main {
   width: 100%;
   height: 49px;
   background-image: url(/img/baner_logo_nike.gif);
-  background-size: cover;
 }
 
 .second_baner {
@@ -377,6 +380,10 @@ main {
   display: none;
 }
 
+.arrow_up:hover {
+  background-color: #C6C6C6;
+}
+
 .summer_mod_card2 {
   margin-left: 150px;
 }
@@ -451,7 +458,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 33px;
 }
 
@@ -689,7 +696,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .look_good_card1 {
@@ -1419,7 +1426,7 @@ footer {
   background-color: #000000;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -1485,8 +1492,11 @@ footer img {
   }
 }
 @media (max-width: 930px) {
+  footer {
+    justify-content: space-around;
+  }
   .first_footer_list {
-    padding: 32px 0 32px 20px;
+    padding: 32px 0 32px 10px;
   }
   .first_footer_list li:nth-child(2n-1) {
     font-size: 10px;
@@ -1496,6 +1506,9 @@ footer img {
   }
   footer img {
     height: 68px;
+  }
+  .second_footer_list {
+    padding-right: 0;
   }
   .second_footer_list li:nth-child(2n-1) {
     font-size: 10px;

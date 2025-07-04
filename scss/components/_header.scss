@@ -35,9 +35,12 @@ header {
 
 .header_nav_button li {
     padding: 6px 0;
-
     font-size: 20px;
     font-weight: 400;
+}
+
+.header_nav_button li a {
+    color: black;
 }
 
 .header_nav_button :not(:first-child) {

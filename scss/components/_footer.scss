@@ -3,7 +3,7 @@ footer {
     background-color: #000000;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -76,8 +76,12 @@ footer img {
 }
 
 @media (max-width: 930px) {
+    footer {
+        justify-content: space-around;
+    }
+
     .first_footer_list {
-        padding: 32px 0 32px 20px;
+        padding: 32px 0 32px 10px;
     }
 
     .first_footer_list li:nth-child(2n-1) {
@@ -90,6 +94,10 @@ footer img {
 
     footer img {
         height: 68px;
+    }
+
+    .second_footer_list {
+        padding-right: 0;
     }
 
     .second_footer_list li:nth-child(2n-1) {
